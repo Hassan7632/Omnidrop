@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/chillax" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="font-Chillax overflow-x-hidden">
+    <header>
+      <div class="px-2 md:px-5 pt-5 pb-10">
+        <div
+          class="flex justify-between items-center px-2 py-1.5 bg-[rgba(255,255,255,0.16)] rounded-xl z-20"
+        >
+          <div class="flex items-center space-x-1 cursor-pointer">
+            <div class="">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/a296/75f8/de0dc3b42ebf3ea6b52419a9e5e25b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H3gJSGe7Oh2B4qvAE2maJm15QbunjD036xQWjK5~xv1~yWWAVYX3MrsgrHnfbM8JTPwOpziQOesIkp9iKwCyBUZj9U~k46S3LeZMcnZeQVWi691cnB209JXT91CLhfcuY6XFQMB9QeC3RKLO~XbF4n-Mrz02URs-Ewyfo5rIG0CFNPAuWCRtY84EnUxhSk-RxoWAop~KKKjLSSVLklxBoPXuhaoOjEEMe~Zt3P6pW02zvY2~GRAYkPVkvIDmPaW3YDlYRbzAI0sL9c98MyNytoQ2tmhPM4l9GBuwcmOKBZjVAXw4I1n4zU0a-ncl5yLkhigz-tP404aCjkjMxoooTg__"
+                alt=""
+                class="w-6 lg:w-10"
+              />
+            </div>
+            <div class="text-md text-white lg:text-2xl">Omnidrop</div>
+          </div>
+          <div
+            class="text-white font-extralight flex items-center space-x-7 max-md:hidden text-md"
+          >
+            <div class="cursor-pointer">Home</div>
+            <div class="cursor-pointer">About</div>
+            <div class="cursor-pointer">Projects</div>
+            <div class="cursor-pointer">Blog</div>
+            <div class="cursor-pointer">Contact</div>
+          </div>
+          <div
+            class="text-black bg-[#F9CB22] py-1 px-2 rounded-md font-medium cursor-pointer max-md:hidden text-md"
+          >
+            Contact us
+          </div>
+          <div class="text-2xl md:text-3xl md:hidden">
+            <i class="fa-solid fa-bars-staggered text-white cursor-pointer"></i>
+          </div>
+        </div>
+
+        <div
+          class="text-white text-center max-xsm:text-lg xsm:text-xl max-sm:text-2xl sm:text-3xl md:text-3xl mt-10 lg:mt-20 sm:mx-[20px] md:mx-[60px] lg:text-6xl lg:mx-32"
+        >
+          The <span class="font-semibold">All-In-One </span>Platform To Start,
+          Scale & Run Your Dropshipping Business
+        </div>
+        <div
+          class="text-white text-center text-[12px] xsm:mx-[8vw] sm:mx-[12vw] md:mx-[18vw] lg:mx-96 mt-4 lg:text-xl"
+        >
+          <div class="">
+            Easily fulfill orders, discover winning products and have all the
+            necessary tools you need to grow your store - all in one place
+          </div>
+        </div>
+        <div
+          class="bg-[rgba(225,225,255,0.18)] w-[9.5rem] sm:w-[12.5rem] mx-auto h-[3.5rem] rounded-full relative mt-5"
+        >
+          <div
+            class="-ml-1 w-36 sm:w-48 px-3 mx-auto flex whitespace-nowrap items-center h-[3rem] bg-white py-2 space-x-3 rounded-full mt-[1rem] absolute -top-3 left-2 cursor-pointer"
+          >
+            <div
+              class="text-black bg-white font-medium max-[600px]:text-[11px] lg:text-[19px]"
+            >
+              Start free trial
+            </div>
+            <i
+              class="fa-solid fa-arrow-right py-[0.6rem] px-2.5 text-xl bg-[#F9CB22] rounded-full -rotate-45 absolute right-1"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://s3-alpha-sig.figma.com/img/e493/7024/2922f277acc1c61eb2821e175172942e?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hZ3UljMyrW2lWdSQacSLJL2xukO5e3d4E55A7Hx4US~7klyuOIV8zabdLZfaNxqg9FyiaUXuPJrY~MoCBVGd7S7-zwaqnMujv3pd80oeIW8gD0-J9HofD0kPXrg~d1b3pGkC6wcbABp91Pj9N3wiJ5wJd-vwhM4OduewrUlKjY~kZgNkYQMBI34GsZ-F-f44JkSfHMt9oURW3HbkY3OIwud6H5DeP1YfLPAv8Fg7DV43fnCuxzzLPhRTGky5xJ23fTZ57Jg1F-GYWBW43V-7UWRBIRZfM6xzgqXU7LN-jUPz6XZ0gOXbHRXNRRVNhvSlIkzdSb0ffmZEF7CgGYDI6A__"
+        alt=""
+        class="-z-30 absolute top-0 h-[1200px] lg:h-[850px] w-full"
+      />
+    </header>
+
+    <section>
+      <div class="lg:my-12 lg:px-2">
+        <div
+          class="bg-white rounded-3xl lg:rounded-[2.5rem] w-[22rem] lg:w-[65rem] xl:w-[80rem] max-lg:px-5 py-5 mx-auto lg:flex lg:mx-auto lg:h-[650px] lg:justify-between lg:gap-x-5 lg:px-5 sm:shadow-2xl"
+        >
+          <div class="flex flex-col justify-start lg:w-1/3">
+            <div class="">
+              <img
+                src=" 1.png"
+                alt=""
+                class="rounded-2xl lg:rounded-3xl xsm:w-96 xsm:mx-auto lg:h-[300px] lg:object-cover lg:object-left"
+              />
+            </div>
+            <div class="">
+              <img
+                src="3.png"
+                alt=""
+                class="rounded-2xl lg:rounded-3xl mx-auto my-5 h-[200px] lg:h-[280px] xsm:w-96 object-cover object-left"
+              />
+            </div>
+          </div>
+          <div class="relative lg:w-2/3">
+            <img
+              src="2.png"
+              alt=""
+              class="bg-[#f9f9f9] w-full rounded-2xl lg:rounded-3xl relative object-center xsm:w-96 xsm:mx-auto lg:w-full lg:h-[600px] h-[300px]"
+            />
+            <img
+              src="video.png"
+              alt=""
+              class="absolute top-[40%] left-[43%] w-12 sm:w-16 lg:w-24"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="bg-[#FFFEF4] h-[3100px] lg:h-[3050px] relative -mt-[23rem] -z-20"
+      >
+        <div
+          class="pt-96 mx-32 flex flex-col sm:flex-row sm:justify-between sm:items-end"
+        >
+          <div
+            class="flex flex-col justify-center items-center sm:items-start space-y-5 md:mt-10 lg:mt-20 max-sm:pt-16"
+          >
+            <div
+              class="text-black font-plex bg-[#F3E9E3] rounded-xl px-2 whitespace-nowrap text-[13px] font-medium"
+            >
+              Our Clients.
+            </div>
+            <div
+              class="text-black text-2xl lg:text-5xl opacity-75 break-words sm:w-48 lg:w-96 whitespace-nowrap sm:whitespace-normal max-sm:py-3"
+            >
+              Trusted by industry leaders
+            </div>
+          </div>
+          <div class="flex items-center justify-center space-x-2">
+            <img src="c1.png" alt="" class="w-32 lg:w-44" />
+            <img src="c2.png" alt="" class="w-32 lg:w-44" />
+            <img src="c3.png" alt="" class="w-32 lg:w-44" />
+          </div>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row md:mx-32 space-x-5 sm:mt-24 lg:mt-40 mt-20 max-xsm:space-y-8"
+        >
+          <div
+            class="text-black font-plex bg-[#F3E9E3] rounded-xl px-2 whitespace-nowrap text-[13px] font-medium h-5 w-32 mx-auto"
+          >
+            Who are we? .
+          </div>
+          <div class="">
+            <div
+              class="text-gray-500 relative pb-12 max-sm:mt-5 lg:px-48 lg:text-4xl"
+            >
+              <span class="text-black">Founded in 2010, </span>we are a
+              Manchester- based independent web development agency that
+              prioritizes client care and builds lasting relationships.
+              <div class="md:absolute md:bottom-0 md:right-0 cursor-pointer">
+                <div
+                  class="bg-gray-200 w-[10.5rem] mx-auto h-[3rem] max-[600px]:w-[8.5rem] rounded-full relative mt-5 cursor-pointer"
+                >
+                  <div
+                    class="-ml-1 w-40 bg-black px-3 mx-auto flex whitespace-nowrap items-center h-[2.5rem] py-1 space-x-3 rounded-full mt-[1rem] absolute -top-3 left-2 cursor-pointer max-[600px]:w-[8rem]"
+                  >
+                    <div
+                      class="text-white font-medium max-[600px]:text-[13px] md:text-lg"
+                    >
+                      Learn More
+                    </div>
+                    <i
+                      class="fa-solid fa-arrow-right py-[0.3rem] px-1.5 text-xl bg-[#F9CB22] text-black rounded-full absolute right-1"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:mx-32 space-y-5 max-sm:mt-10 lg:mt-20">
+          <div
+            class="text-black font-plex bg-[#F3E9E3] rounded-xl px-2 whitespace-nowrap text-[13px] font-medium h-5 w-32 max-sm:mx-auto"
+          >
+            Our expertise .
+          </div>
+          <div
+            class="text-black text-2xl md:text-3xl lg:text-5xl max-sm:py-3 whitespace-nowrap max-md:text-center"
+          >
+            Custom websites for <br />
+            tailored solutions
+          </div>
+        </div>
+
+        <div
+          class="bg-white mx-5 lg:mx-32 rounded-3xl p-5 lg:mt-16 shadow-md max-sm:mt-10"
+        >
+          <div
+            class="flex flex-col-reverse items-center md:flex-row justify-between"
+          >
+            <div class="pt-3 sm:pl-6">
+              <div
+                class="p-2.5 rounded-full bg-[#F3E9E3] w-[3rem] max-sm:hidden"
+              >
+                <i
+                  class="fa-solid fa-palette text-2xl pl-0.5 pr-0.5 pt-0.5"
+                ></i>
+              </div>
+              <div
+                class="text-xl lg:text-[2.5rem] font-medium mt-6 whitespace-nowrap"
+              >
+                E-commerce Development
+              </div>
+              <div class="lg:w-[25.1rem] mb-5 mt-5 text-gray-500">
+                Our solutions are designed to make online shopping easy and
+                enjoyable for your customers,helping you grow your online
+                buisness.
+              </div>
+              <div class="flex flex-col gap-y-5">
+                <div
+                  class="bg-[#f4f4f4] flex space-x-2 py-1 px-2 w-40 rounded-xl whitespace-nowrap"
+                >
+                  <div class="">
+                    <i class="fa-regular fa-circle-check"></i>
+                  </div>
+                  <div class="">Payment integration</div>
+                </div>
+                <div
+                  class="bg-[#f4f4f4] flex space-x-2 py-1 px-2 w-44 rounded-xl whitespace-nowrap"
+                >
+                  <div class="">
+                    <i class="fa-regular fa-circle-check"></i>
+                  </div>
+                  <div class="">Inventory management</div>
+                </div>
+                <div
+                  class="bg-[#f4f4f4] flex space-x-2 py-1 px-2 w-60 rounded-xl"
+                >
+                  <div class="">
+                    <i class="fa-regular fa-circle-check"></i>
+                  </div>
+                  <div class="">Shopping cart experience</div>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/2">
+              <img
+                src="s22.png"
+                alt=""
+                class="bg-[#f9f9f9] rounded-2xl w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white mx-5 lg:mx-32 rounded-3xl p-5 lg:mt-16 shadow-md max-md:my-10"
+        >
+          <div
+            class="flex flex-col-reverse items-center md:flex-row justify-between"
+          >
+            <div class="pt-3 sm:pl-6">
+              <div
+                class="p-2.5 rounded-full bg-[#F3E9E3] w-[3rem] max-sm:hidden"
+              >
+                <img src="Frame.png" alt="" />
+              </div>
+              <div
+                class="text-xl lg:text-[2.7rem] font-medium mt-6 whitespace-nowrap"
+              >
+                Custom Website
+              </div>
+              <div class="lg:w-[25.1rem] mb-5 mt-5 text-gray-500">
+                we specilaize in creating bespoke websites that reflect your
+                brand's identity and meet your requirements.
+              </div>
+              <div class="flex flex-col gap-y-5">
+                <div
+                  class="bg-[#f4f4f4] flex space-x-2 py-1 px-2 w-40 rounded-xl whitespace-nowrap"
+                >
+                  <div class="">
+                    <i class="fa-regular fa-circle-check"></i>
+                  </div>
+                  <div class="">Web design</div>
+                </div>
+                <div
+                  class="bg-[#f4f4f4] flex space-x-2 py-1 px-2 w-44 rounded-xl whitespace-nowrap"
+                >
+                  <div class="">
+                    <i class="fa-regular fa-circle-check"></i>
+                  </div>
+                  <div class="">Brand Identity Design</div>
+                </div>
+                <div
+                  class="bg-[#f4f4f4] flex space-x-2 py-1 px-2 w-60 rounded-xl"
+                >
+                  <div class="">
+                    <i class="fa-regular fa-circle-check"></i>
+                  </div>
+                  <div class="whitespace-nowrap">
+                    Brand stratergy Development
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/2">
+              <img
+                src="s3.png"
+                alt=""
+                class="bg-[#f9f9f9] rounded-2xl w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white mx-5 sm:mx-32 rounded-3xl p-5 lg:mt-16 shadow-md">
+          <div
+            class="flex flex-col-reverse items-center md:flex-row justify-between"
+          >
+            <div class="pt-3 sm:pl-6">
+              <div
+                class="p-2.5 rounded-full bg-[#F3E9E3] w-[3rem] max-sm:hidden"
+              >
+                <img src="speaker.png" alt="" />
+              </div>
+              <div
+                class="text-xl lg:text-[2.7rem] font-medium mt-6 whitespace-nowrap"
+              >
+                SEO Optimization
+              </div>
+              <div class="lg:w-[25.1rem] mb-5 mt-5 text-gray-500">
+                Our SEO optimization services are designed to boost your
+                website's search engine and ranking and drive traffic.
+              </div>
+              <div class="flex flex-col gap-y-5">
+                <div
+                  class="bg-[#f4f4f4] flex space-x-2 py-1 px-2 w-40 rounded-xl whitespace-nowrap"
+                >
+                  <div class="">
+                    <i class="fa-regular fa-circle-check"></i>
+                  </div>
+                  <div class="">Site's content</div>
+                </div>
+                <div
+                  class="bg-[#f4f4f4] flex space-x-2 py-1 px-2 w-44 rounded-xl whitespace-nowrap"
+                >
+                  <div class="">
+                    <i class="fa-regular fa-circle-check"></i>
+                  </div>
+                  <div class="">Outreach and backlink</div>
+                </div>
+                <div
+                  class="bg-[#f4f4f4] flex space-x-2 py-1 px-2 w-60 rounded-xl"
+                >
+                  <div class="">
+                    <i class="fa-regular fa-circle-check"></i>
+                  </div>
+                  <div class="">Robust analytics</div>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/2">
+              <img
+                src="s4.png"
+                alt=""
+                class="bg-[#f9f9f9] rounded-2xl w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-[#F7F5E7] pt-16 lg:pt-32 pb-16 lg:pb-32">
+        <div class="md:flex md:justify-between sm:mx-32 lg:items-end">
+          <div class="">
+            <div
+              class="text-black font-plex bg-[#F3E9E3] rounded-xl px-3 whitespace-nowrap text-[13px] font-medium h-5 w-28 max-md:mx-auto"
+            >
+              Our Works .
+            </div>
+            <div class="max-md:text-center text-3xl mt-5 lg:text-5xl lg:mt-10">
+              Take a look at <br />
+              our projects
+            </div>
+          </div>
+          <div class="">
+            <div
+              class="bg-gray-200 w-[13.5rem] mx-auto h-[3rem] max-[600px]:w-[10.5rem] rounded-full relative mt-5 cursor-pointer"
+            >
+              <div
+                class="-ml-1 w-52 bg-black px-3 mx-auto flex whitespace-nowrap items-center h-[2.5rem] py-1 space-x-3 rounded-full mt-[1rem] absolute -top-3 left-2 cursor-pointer max-[600px]:w-[10rem]"
+              >
+                <div
+                  class="text-white font-medium max-[600px]:text-[13px] md:text-lg"
+                >
+                  View more works
+                </div>
+                <i
+                  class="fa-solid fa-arrow-right py-[0.3rem] px-1.5 text-xl bg-[#F9CB22] text-black rounded-full absolute right-1"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row lg:mx-32 lg:justify-between lg:mt-10"
+        >
+          <div
+            class="bg-white w-[23rem] max-lg:mx-auto rounded-2xl my-5 lg:w-[35rem] lg:shadow-xl"
+          >
+            <div class="p-3 bg-black rounded-t-2xl">
+              <img src="p1.png" alt="" class="" />
+            </div>
+            <div class="text-2xl font-medium pl-4 mt-5 lg:text-3xl">
+              Gelox - Website Design
+            </div>
+            <div
+              class="text-gray-400 pl-4 pb-3 text-sm lg:text-lg lg:pt-1 lg:pb-5"
+            >
+              Fastest way to lunch you website
+            </div>
+          </div>
+          <div
+            class="bg-white w-[23rem] max-lg:mx-auto rounded-2xl my-5 lg:w-[35rem] lg:shadow-xl"
+          >
+            <div class="p-3 bg-black rounded-t-2xl">
+              <img src="p2.png" alt="" class="" />
+            </div>
+            <div class="text-2xl font-medium pl-4 mt-5 lg:text-3xl">
+              Milo - Web development
+            </div>
+            <div
+              class="text-gray-400 pl-4 pb-3 text-sm lg:text-lg lg:pt-1 lg:pb-5"
+            >
+              Fastest way to lunch you website
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row lg:mx-32 lg:justify-between">
+          <div
+            class="bg-white w-[23rem] max-lg:mx-auto rounded-2xl my-5 lg:w-[35rem] lg:shadow-xl"
+          >
+            <div class="bg-black rounded-t-2xl">
+              <img src="p3.png" alt="" class="w-full" />
+            </div>
+            <div class="text-2xl font-medium pl-4 mt-5 lg:text-3xl">
+              Gelox - Website Design
+            </div>
+            <div
+              class="text-gray-400 pl-4 pb-3 text-sm lg:text-lg lg:pt-1 lg:pb-5"
+            >
+              Fastest way to lunch you website
+            </div>
+          </div>
+          <div
+            class="bg-white w-[23rem] max-lg:mx-auto rounded-2xl my-5 lg:w-[35rem] lg:shadow-xl"
+          >
+            <div class="p-3 bg-black rounded-t-2xl">
+              <img src="p4.png" alt="" class="" />
+            </div>
+            <div class="text-2xl font-medium pl-4 mt-5 lg:text-3xl">
+              Milo - Web development
+            </div>
+            <div
+              class="text-gray-400 pl-4 pb-3 text-sm lg:text-lg lg:pt-1 lg:pb-5"
+            >
+              Fastest way to lunch you website
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-[#FFFEF4] lg:px-32 pt-16 lg:pt-32 pb-32">
+        <div class="">
+          <div
+            class="text-black font-plex bg-[#F3E9E3] rounded-xl px-3 whitespace-nowrap text-[13px] font-medium h-5 w-28 max-md:mx-auto"
+          >
+            Our State .
+          </div>
+          <div class="max-md:text-center text-4xl mt-5 lg:text-5xl lg:mt-10">
+            Bundled with <br />
+            industry experience
+          </div>
+        </div>
+        <div
+          class="max-sm:flex max-sm:flex-col max-sm:justify-center md:flex md:justify-between lg:mt-10"
+        >
+          <div
+            class="bg-white w-[23rem] lg:w-96 lg:h-[26rem] max-lg:mx-auto rounded-2xl my-5 shadow-md overflow-y-hidden relative"
+          >
+            <div class="font-semibold pl-5 pt-7 text-7xl">7+</div>
+            <div class="pt-56 lg:pt-60 flex justify-between items-center">
+              <i
+                class="fa-solid fa-crown text-[#F3F1E3] text-8xl rotate-45 -ml-2"
+              ></i>
+              <div class="text-lg pr-3 font-medium">
+                Years of <br />experience
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white w-[23rem] lg:w-96 lg:h-[26rem] max-lg:mx-auto rounded-2xl my-5 shadow-md overflow-y-hidden relative"
+          >
+            <div class="font-semibold pl-5 pt-7 text-7xl">10k+</div>
+            <div class="pt-56 lg:pt-60 flex justify-between items-center">
+              <i
+                class="fa-solid fa-user-group text-[#F3F1E3] text-8xl rotate-45 -ml-2"
+              ></i>
+              <div class="text-lg pr-3 font-medium">Paid <br />customers</div>
+            </div>
+          </div>
+          <div
+            class="bg-white w-[23rem] lg:w-96 lg:h-[26rem] max-lg:mx-auto rounded-2xl my-5 shadow-md overflow-y-hidden relative"
+          >
+            <div class="font-semibold pl-5 pt-7 text-7xl">99%</div>
+            <div class="pt-56 lg:pt-60 flex justify-between items-center">
+              <i
+                class="fa-solid fa-face-smile text-[#F3F1E3] text-[7rem] rotate-45 -ml-3 -mb-3"
+              ></i>
+              <div class="text-lg pr-3 font-medium">
+                Satisfaction <br />rate
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-black lg:px-32 lg:pt-32 pt-16">
+        <div
+          class="text-white font-plex bg-[#1f1f1f] rounded-xl px-3 whitespace-nowrap text-[13px] font-medium h-5 w-52 max-lg:mx-auto"
+        >
+          Clients Testimonials .
+        </div>
+        <div
+          class="lg:flex max-lg:flex max-lg:flex-col max-lg:items-center lg:justify-between lg:items-center lg:mt-5 lg:mb-10 max-lg:my-10 max-lg:space-y-5"
+        >
+          <div class="text-white text-4xl  sm:text-6xl">
+            You're in safe hands.
+          </div>
+          <div class="flex space-x-5">
+            <div
+              class="py-4 px-5 rounded-full border-2 border-yellow-400 bg-black text-white w-[70px]"
+            >
+              <i class="fa-solid fa-arrow-left fa-2x"></i>
+            </div>
+            <div
+              class="py-4 px-5 rounded-full border-2 border-yellow-400 bg-yellow-400 text-black w-[70px]"
+            >
+              <i class="fa-solid fa-arrow-right fa-2x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-black -mt-10 pt-14 lg:pb-32">
+        <div class="md:flex md:justify-between max-xl:flex max-xl:flex-col max-lg:space-y-10 max-lg:pb-10">
+          <div
+            class="bg-[#1f1f1f] lg:w-[35rem] pl-10 pr-8 py-14 rounded-2xl lg:-ml-36 max-lg:mx-auto max-lg:w-[22.5rem]"
+          >
+            <div class="flex space-x-8">
+              <span class="text-[#696969] text-7xl font-semibold">
+                3X
+                <div class="text-[#696969] text-lg font-normal">
+                  Sales increase
+                </div>
+              </span>
+              <span class="text-[#696969] text-7xl font-semibold">
+                50%
+                <div class="text-[#696969] text-lg font-normal">
+                  Company growth
+                </div>
+              </span>
+            </div>
+            <div class="text-white mt-14 text-[27px]">
+              " Never have I seen a dropshipping software that has everything
+              you need 1 place. I found my winning product on here & their auto
+              fulfilment tool is a game changer. "
+            </div>
+            <div class="flex items-center justify-between mt-12">
+              <div class="flex items-center space-x-3">
+                <img
+                  src="i1.png"
+                  alt=""
+                  class="w-14 h-14 rounded-full object-cover object-right"
+                />
+                <div class="flex flex-col">
+                  <div class="text-white">Mark Alexander</div>
+                  <div class="text-[#696969]">Founder of slices</div>
+                </div>
+              </div>
+              <img src="g7.svg" alt="" />
+            </div>
+          </div>
+          <div class="bg-[#1f1f1f] w-[35rem] pl-6 pr-8 py-14 rounded-2xl max-lg:mx-auto max-lg:w-[22.5rem]">
+            <div class="flex space-x-8">
+              <span class="text-[#696969] text-7xl font-semibold">
+                3X
+                <div class="text-[#696969] text-lg font-normal">
+                  Sales increase
+                </div>
+              </span>
+              <span class="text-[#696969] text-7xl font-semibold">
+                50%
+                <div class="text-[#696969] text-lg font-normal">
+                  Company growth
+                </div>
+              </span>
+            </div>
+            <div class="text-white mt-14 text-[27px]">
+              " Never have I seen a dropshipping software that has everything
+              you need 1 place. I found my winning product on here & their auto
+              fulfilment tool is a game changer. "
+            </div>
+            <div class="flex items-center justify-between mt-12">
+              <div class="flex items-center space-x-3">
+                <img
+                  src="i1.png"
+                  alt=""
+                  class="w-14 h-14 rounded-full object-cover object-right"
+                />
+                <div class="flex flex-col">
+                  <div class="text-white">Mark Alexander</div>
+                  <div class="text-[#696969]">Founder of slices</div>
+                </div>
+              </div>
+              <img src="g7.svg" alt="" />
+            </div>
+          </div>
+          <div
+            class="bg-[#1f1f1f] w-[35rem] pl-6 pr-8 py-14 rounded-2xl lg:-mr-36 max-lg:mx-auto max-lg:w-[22.5rem] "
+          >
+            <div class="flex space-x-8">
+              <span class="text-[#696969] text-7xl font-semibold">
+                3X
+                <div class="text-[#696969] text-lg font-normal">
+                  Sales increase
+                </div>
+              </span>
+              <span class="text-[#696969] text-7xl font-semibold">
+                50%
+                <div class="text-[#696969] text-lg font-normal">
+                  Company growth
+                </div>
+              </span>
+            </div>
+            <div class="text-white mt-14 text-[27px]">
+              " Never have I seen a dropshipping software that has everything
+              you need 1 place. I found my winning product on here & their auto
+              fulfilment tool is a game changer. "
+            </div>
+            <div class="flex items-center justify-between mt-12">
+              <div class="flex items-center space-x-3">
+                <img
+                  src="i1.png"
+                  alt=""
+                  class="w-14 h-14 rounded-full object-cover object-right"
+                />
+                <div class="flex flex-col">
+                  <div class="text-white">Mark Alexander</div>
+                  <div class="text-[#696969]">Founder of slices</div>
+                </div>
+              </div>
+              <img src="g7.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="bg-[#FFFEF4] lg:px-32 lg:pt-32 pt-16 lg:pb-32 pb-16">
+        <div
+          class=" font-plex bg-[#F3E9E3] rounded-xl px-3 whitespace-nowrap text-[13px] font-medium h-5 w-28 max-lg:mx-auto"
+        >
+          Our Blogs .
+        </div>
+        <div
+          class="lg:flex max-lg:flex max-lg:flex-col justify-center lg:justify-between lg:items-end lg:mt-5 lg:mb-10 max-lg:items-center max-lg:mt-10"
+        >
+          <div class="text-black text-5xl lg:text-6xl">
+            The latest blogs <br> from Omnidrop
+          </div>
+          <div class="">
+            <div
+              class="bg-gray-200 w-[18.5rem] mx-auto h-[3rem] max-[600px]:w-[15.5rem] rounded-full relative mt-5 cursor-pointer"
+            >
+              <div
+                class="-ml-1 w-72 bg-black px-3 mx-auto flex whitespace-nowrap items-center h-[2.5rem] py-1 space-x-3 rounded-full mt-[1rem] absolute -top-3 left-2 cursor-pointer max-[600px]:w-[15rem]"
+              >
+                <div
+                  class="text-white font-medium max-[600px]:text-[13px] md:text-lg font-plex lg:pl-10"
+                >
+                  Explore all blogs
+                </div>
+                <i
+                  class="fa-solid fa-arrow-right py-[0.3rem] px-1.5 text-xl bg-[#F9CB22] text-black rounded-full absolute right-1"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:flex max-lg:flex max-lg:flex-col lg:justify-between">
+          <div class="bg-white w-96 max-lg:mx-auto rounded-xl max-lg:mt-10 lg:w-[35rem]">
+            <div class="relative">
+              <img src="b1.png" alt="" class="w-96 lg:w-[35rem]">
+            <span class="font-plex text-white bg-[rgba(255,255,255,0.16)] absolute top-[14rem] px-2 py-1 left-5 rounded-lg text-[10px] lg:top-[22rem]">
+             Webdesign
+            </span>
+            <span class="font-plex text-white bg-[rgba(255,255,255,0.16)]  absolute top-[14rem] px-2 py-1 left-28 rounded-lg text-[10px] lg:top-[22rem]">
+              Development
+            </span>
+            </div>
+            <div class="">
+                <div class="text-2xl pt-6 pl-5 lg:text-4xl">
+                  How a custom website can transform your business
+                </div>
+                <div class="flex items-end justify-between mt-5 px-5 pb-5">
+                  <div class="flex items-center space-x-3">
+                    <img
+                      src="i1.png"
+                      alt=""
+                      class="w-14 h-14 rounded-full object-cover object-right grayscale"
+                    />
+                    <div class="flex flex-col">
+                      <div class="text-sm">Mark Alexander</div>
+                      <div class="text-[#696969] text-sm">Founder of slices</div>
+                    </div>
+                  </div>
+                  <div class="text-[10px] text-[#696969] lg:text-sm">
+                    . 10 min read
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="bg-white w-96 max-lg:mx-auto rounded-xl max-lg:mt-10 lg:w-[35rem]">
+            <div class="relative">
+              <img src="b2.png" alt="" class="w-96 lg:w-[35rem]">
+            <span class="font-plex text-white bg-[rgba(255,255,255,0.16)] absolute top-[14rem] px-2 py-1 left-5 rounded-lg text-[10px] lg:top-[22rem]">
+             Webdesign
+            </span>
+            <span class="font-plex text-white bg-[rgba(255,255,255,0.16)]  absolute top-[14rem] px-2 py-1 left-28 rounded-lg text-[10px] lg:top-[22rem]">
+              Development
+            </span>
+            </div>
+            <div class="">
+                <div class="text-2xl pt-6 pl-5 lg:text-4xl">
+                  10 tips of developing website with brand guidelines 
+                </div>
+                <div class="flex items-end justify-between mt-5 px-5 pb-5">
+                  <div class="flex items-center space-x-3">
+                    <img
+                      src="i1.png"
+                      alt=""
+                      class="w-14 h-14 rounded-full object-cover object-right grayscale"
+                    />
+                    <div class="flex flex-col">
+                      <div class="text-sm">Mark Alexander</div>
+                      <div class="text-[#696969] text-sm">Founder of slices</div>
+                    </div>
+                  </div>
+                  <div class="text-[10px] text-[#696969] lg:text-sm">
+                    . 10 min read
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <img src="w1.png" alt="" class="w-full object-cover h-[500px] lg:h-[700px]">
+        <div class="absolute top-[30%] left-[16%] lg:left-[20%]">
+          <div class="text-center text-white text-[10vw] md:text-7xl lg:text-9xl">
+            Ready to work <br> together?
+          </div>
+
+          <div class=" lg:mt-10">
+            <div
+            class="bg-[rgba(225,225,255,0.18)] w-[12.5rem] sm:w-[12.5rem] mx-auto h-[3.5rem] rounded-full relative mt-5"
+          >
+            <div
+              class="-ml-1 w-48 px-3 mx-auto flex whitespace-nowrap items-center h-[3rem] bg-white py-2 space-x-3 rounded-full mt-[1rem] absolute -top-3 left-2 cursor-pointer"
+            >
+              <div
+                class="text-black bg-white font-medium max-[600px]:text-[19px] lg:text-lg"
+              >
+                Get Started 
+              </div>
+              <i
+                class="fa-solid fa-arrow-right py-[0.6rem] px-2.5 text-xl bg-[#F9CB22] rounded-full -rotate-45 absolute right-1 text-black"
+              ></i>
+            </div>
+          </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="bg-[#1f1f1f] lg:px-32 pt-16 lg:pt-32 ">
+        <div class="flex justify-between max-md:flex max-md:flex-col max-md:items-center">
+          <div class="">
+            <div class="text-white text-4xl">
+              We would love to hear <br>
+              about your project
+            </div>
+            <div class=" lg:mt-10">
+              <div
+              class="bg-[rgba(225,225,255,0.18)] w-[12.5rem] sm:w-[12.5rem] h-[3.5rem] rounded-full relative mt-5 max-sm:mx-auto"
+            >
+              <div
+                class="-ml-1 w-48 px-3 max-sm:mx-auto flex whitespace-nowrap items-center h-[3rem] bg-white py-2 space-x-3 rounded-full mt-[1rem] absolute -top-3 left-1 md:left-2 cursor-pointer"
+              >
+                <div
+                  class="text-black bg-white font-medium max-[600px]:text-[19px] lg:text-lg"
+                >
+                  Get Started 
+                </div>
+                <i
+                  class="fa-solid fa-arrow-right py-[0.6rem] px-2.5 text-xl bg-[#F9CB22] rounded-full -rotate-45 absolute right-1 text-black"
+                ></i>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="max-md:mt-10">
+            <div class="flex space-x-10 max-sm:space-x-5 max-md:justify-center">
+              <div class=" flex flex-col text-[#696969] space-y-3">
+                <span class="text-white cursor-pointer">LANDINGS</span>
+                <span class="cursor-pointer">Home</span>
+                <span class="cursor-pointer">About</span>
+                <span class="cursor-pointer">Career</span>
+                <span class="cursor-pointer">Contact</span>
+              </div>
+              <div class=" flex flex-col text-[#696969] space-y-3">
+                <span class="text-white cursor-pointer">PAGES</span>
+                <span class="cursor-pointer">Blog</span>
+                <span class="cursor-pointer">Works</span>
+                <span class="cursor-pointer">Services</span>
+              </div>
+              <div class=" flex flex-col text-[#696969] space-y-3">
+                <span class="text-white cursor-pointer">UTILITIES</span>
+                <span class="cursor-pointer">Style guide</span>
+                <span class="cursor-pointer">Licenses</span>
+                <span class="cursor-pointer">Changelog</span>
+              </div>
+              <div class=" flex flex-col  text-[#696969] space-y-3">
+                <span class="text-white cursor-pointer">Social Media</span>
+                <span class="cursor-pointer">Twitter</span>
+                <span class="cursor-pointer">Dribble</span>
+                <span class="cursor-pointer">Behance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:mt-40 mt-20">
+          <img src="Group.png" alt="" class="w-[25rem] md:w-[35rem] lg:ml-auto max-md:mx-auto cursor-pointer">
+        </div>
+        <div class="text-[#a1a1a1] font-medium text-lg max-sm:text-center max-sm:mt-5">
+          &#169; Copyright 2024 OMNIDROP HOLDING LLC, WY, US
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
